@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Yomogi', cursive;
+}
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+body{
+	max-width: 2160px;
+	margin: 0 auto;
+	background-color: #FAFAFA;
+}
+.app {
+	width: 100%;
+	height: 100%;
+}
+
+//Header
+
+.header {
+	display: flex;
+	min-width: fit-content;
+	width: auto;
+	object-fit: contain;
+	background-color: #e9e9e9;
+	justify-content: space-between;
+	box-shadow: rgba(0, 0, 0, 0.267) 2px 3px 10px 0px;
+}
+.clock {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	margin: 1em;
+}
+.clock1 {
+	font-size: 2rem;
+}
+.clock2 {
+	font-size: 1.5rem;
+}
+.clock3 {
+	font-size: 1.2rem;
+}
+.search__center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.header__right {
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.darkSwitch {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.darkSwitch p {
+	margin: 10px;
+}
+.search_container {
+	display: flex;
+	align-items: center;
+	width: auto;
+	background-color: #cacaca;
+	text-align: center;
+	border-radius: 25px;
+}
+.search_container input[type='text'],
+.addNote textarea {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 1.5rem;
+	text-align: center;
+	resize: none;
+}
+
+.addNote button,
+.search_container button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.search_container .MuiSvgIcon-root {
+	fill: #757575 !important;
+	margin: 5px;
+}
+
+.MuiSvgIcon-root {
+	font-size: 3em !important;
+}
+
+.addNote {
+	margin-top: 2em;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: center;
+}
+
+section {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section > h1 {
+	margin-top: 0.5em;
+	text-align: center;
+	padding: 0 20px;
+}
+.section textarea {
+	margin-bottom: 1em;
+}
+.section {
+	margin-top: 1em;
+	background-color: #fff27f;
+	border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.267) 2px 3px 10px 0px;
+}
+.section .MuiSvgIcon-root {
+	margin-right: 5px !important;
+}
+
+//Notes
+.notes {
+	background-color: #fff27f;
+	width: 300px;
+	height: 250px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 10px;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+	margin-right: 1em;
+	box-shadow: rgba(0, 0, 0, 0.267) 2px 3px 10px 0px;
+	cursor: move;
+}
+
+.buttons_container {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0.5em;
+}
+.buttons_container button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 0.5rem;
+}
+
+.notes textarea {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	white-space: pre-wrap;
+	resize: none;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.4rem;
+}
+.notes textarea:enabled {
+	background-color: #f0e47e;
+}
+
+.deleteAll {
+	padding: 4px 5px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.deleteAll .MuiSvgIcon-root {
+	font-size: 1.2rem !important;
+	margin-right: 5px !important;
+	fill: #414141;
+}
+
+//main
+.main{
+	margin: 0 auto;
+	min-width: 280px
+}
+.notesList {
+	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+button:hover{
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+	html{
+		font-size: 12px;
+	}
+	.notes {
+		background-color: #fff27f;
+		width: 180px;
+		height: 120px;
+	}
+	.app{
+		object-fit: contain;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body{
+		background-color: #121212;
+	}
+	.header{
+		background-color: #1F1F1F;
+		color: whitesmoke;
+	}
+	.deleteAll .MuiSvgIcon-root {
+		fill: whitesmoke;
+	}
+	.deleteAll{
+		color: whitesmoke;
+		border: solid 1px whitesmoke;
+	}
+	.search_container{
+		background-color: #0E0E0E;
+	}
+	.search_container input[type='text']{
+		color: whitesmoke;	
+	}
+  }
