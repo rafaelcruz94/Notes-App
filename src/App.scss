@@ -11,11 +11,11 @@ html {
 	width: 100%;
 	height: 100%;
 }
-body{
+body {
 	max-width: 2160px;
 	min-width: 280px;
 	margin: 0 auto;
-	background-color: #FAFAFA;
+	background-color: #fafafa;
 }
 .app {
 	width: 100%;
@@ -77,6 +77,7 @@ body{
 	background-color: #cacaca;
 	text-align: center;
 	border-radius: 25px;
+	justify-content: center;
 }
 .search_container input[type='text'],
 .addNote textarea {
@@ -86,6 +87,13 @@ body{
 	font-size: 1.5rem;
 	text-align: center;
 	resize: none;
+}
+
+.search_container input[type='text'] {
+	width: 7em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .addNote button,
@@ -198,9 +206,9 @@ section {
 }
 
 //main
-.main{
+.main {
 	margin: 0 auto;
-	min-width: 280px
+	min-width: 280px;
 }
 .notesList {
 	margin-top: 1em;
@@ -211,12 +219,12 @@ section {
 	justify-content: center;
 }
 
-button:hover{
+button:hover {
 	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
-	html{
+	html {
 		font-size: 12px;
 	}
 	.notes {
@@ -224,55 +232,54 @@ button:hover{
 		width: 120px;
 		height: 120px;
 	}
-	.app{
+	.app {
 		object-fit: contain;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	body{
+	body {
 		background-color: #121212;
 	}
-	.header{
-		background-color: #1F1F1F;
+	.header {
+		background-color: #1f1f1f;
 		color: whitesmoke;
 	}
 	.deleteAll .MuiSvgIcon-root {
 		fill: whitesmoke;
 	}
-	.deleteAll{
+	.deleteAll {
 		color: whitesmoke;
 		border: solid 1px whitesmoke;
 	}
-	.search_container{
-		background-color: #0E0E0E;
+	.search_container {
+		background-color: #0e0e0e;
 	}
-	.search_container input[type='text']{
-		color: whitesmoke;	
+	.search_container input[type='text'] {
+		color: whitesmoke;
 	}
-  }
+}
 
-
-  @media only screen and (max-width: 480px) {
-	html{
+@media only screen and (max-width: 480px) {
+	html {
 		font-size: 8px;
 	}
-	.deleteAll{
+	.deleteAll {
 		font-size: 0.8rem;
 	}
-	.search_container{
+	.search_container {
 		width: 120px;
 	}
-	.MuiSvgIcon-root{
+	.MuiSvgIcon-root {
 		font-size: 1.5rem !important;
 	}
-	.slider{
+	.slider {
 		width: 3.6em !important;
 		height: 2.2em;
 		padding: 0;
 		margin: 0;
 	}
-	.slider:before{
+	.slider:before {
 		width: 1.3em !important;
 		height: 1.3em !important;
 	}
@@ -281,10 +288,10 @@ button:hover{
 		width: 180px;
 		height: 120px;
 	}
-	.app{
+	.app {
 		object-fit: contain;
 	}
-	.darkSwitch{
+	.darkSwitch {
 		margin: 0 !important;
 		padding: 0 !important;
 	}
