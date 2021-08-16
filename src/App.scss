@@ -13,6 +13,7 @@ html {
 }
 body{
 	max-width: 2160px;
+	min-width: 280px;
 	margin: 0 auto;
 	background-color: #FAFAFA;
 }
@@ -220,7 +221,7 @@ button:hover{
 	}
 	.notes {
 		background-color: #fff27f;
-		width: 180px;
+		width: 120px;
 		height: 120px;
 	}
 	.app{
@@ -250,3 +251,41 @@ button:hover{
 		color: whitesmoke;	
 	}
   }
+
+
+  @media only screen and (max-width: 480px) {
+	html{
+		font-size: 8px;
+	}
+	.deleteAll{
+		font-size: 0.8rem;
+	}
+	.search_container{
+		width: 120px;
+	}
+	.MuiSvgIcon-root{
+		font-size: 1.5rem !important;
+	}
+	.slider{
+		width: 3.6em !important;
+		height: 2.2em;
+		padding: 0;
+		margin: 0;
+	}
+	.slider:before{
+		width: 1.3em !important;
+		height: 1.3em !important;
+	}
+	.notes {
+		background-color: #fff27f;
+		width: 180px;
+		height: 120px;
+	}
+	.app{
+		object-fit: contain;
+	}
+	.darkSwitch{
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
