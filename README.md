@@ -1,3 +1,10 @@
+#Notes App - ReactJS, SASS, Material UI
+
+Live-Demo: https://rafaelcruz94.github.io/Notes-App/
+
+![Notes App](https://user-images.githubusercontent.com/84050601/129591288-6f73692d-afc3-4d67-99ed-50677f13adfd.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
